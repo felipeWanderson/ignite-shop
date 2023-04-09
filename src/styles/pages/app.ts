@@ -17,7 +17,7 @@ export const Container = styled('div', {
   minHeght: '100vh'
 })
 
-export const Header = styled('header', {
+export const HeaderContainer = styled('header', {
   padding: '2rem 0',
   width: '100%',
   maxWidth: 1180,
@@ -26,6 +26,16 @@ export const Header = styled('header', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between'
+})
+export const HeaderContainerSimple = styled('header', {
+  padding: '2rem 0',
+  width: '100%',
+  maxWidth: 1180,
+  margin: '0 auto',
+
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center'
 })
 
 export const CartButtonContainer = styled('button', {

@@ -41,16 +41,24 @@ export const Product = styled('div', {
     opacity: 0,
     transition: 'all 0.2s ease-in-out',
 
-    strong: {
-      fontSize: '$lg',
-      color: '$gray100',
-    },
+    a: {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'flex-start',
+      justifyContent: 'space-between',
+      textDecoration: 'none',
 
-    span: {
-      fontSize: '$xl',
-      fontWeight: 'bold',
-      color: '$green300'
-    },
+      strong: {
+        fontSize: '$lg',
+        color: '$gray100',
+      },
+
+      span: {
+        fontSize: '$xl',
+        fontWeight: 'bold',
+        color: '$green300'
+      },
+    }
   },
 
   '&:hover': {
@@ -60,3 +68,30 @@ export const Product = styled('div', {
     }
   }
 })
+
+export const AddToCartButton = styled('button', {
+  display: 'flex',
+  alignItems: 'center',
+  padding: 12,
+  gap: 12,
+
+  width: 56,
+  height: 56,
+  zIndex: 10,
+
+  background: '$green500',
+  borderRadius: 6,
+  border: 'none',
+  cursor: 'pointer',
+
+  transition: 'background 0.2s',
+
+  svg: {
+    fill: '$white'
+  },
+
+  '&:hover': {
+    background: '$green300',
+  }
+
+});
